@@ -18,6 +18,7 @@ const app = angular.module('ng-canvas-app', [
     'ng-canvas-module'
 ]);
 
-app.controller('Main-Controller', function() {
-   console.log('Vector: ', Vector.create([6,2,9])); 
-});
+
+import HomeController from './controllers/main-controller';
+app.controller('main-controller', HomeController);
+

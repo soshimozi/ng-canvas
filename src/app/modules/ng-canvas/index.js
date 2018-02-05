@@ -8,3 +8,6 @@ app.directive('ng-line', require('./directives/ng-line'));
 app.directive('ng-pixel', require('./directives/ng-pixel'));
 app.directive('ng-rectangle', require('./directives/ng-rectangle'));
 app.directive('ng-polygon', require('./directives/ng-polygon'));
+
+
+app.controller('ngCanvasController', require('./controllers/ng-canvas-controller'))
