@@ -6,11 +6,13 @@ const ngCircle = function () {
           radius: '@',
           x: '@',
           y: '@',
-          z: '@'
+          z: '@',
+          filled: '@',
+          fillColor: '@',
+          strokeStyle: '@'
         },
         link: function(scope, element, attrs, ctrl) {
-            console.log('link inside ng-Circle')
-            console.log('ctr', ctrl);
+            ctrl.addCircle({x: parseInt(scope.x), y: parseInt(scope.y), radius: parseInt(scope.radius), filled: scope.filled === 'true', fillColor: scope.fillColor, stroke: scope.strokeStyle});
         }
     };        
 };
