@@ -13,12 +13,10 @@ import '../../node_modules/bootstrap/dist/css/bootstrap-theme';
 import '../../node_modules/font-awesome/css/font-awesome.css';
 
 const app = angular.module('ng-canvas-app', [
-    'ngRoute',
     'ui.bootstrap',
     'ng-canvas-module'
 ]);
 
 
-import HomeController from './controllers/main-controller';
-app.controller('main-controller', HomeController);
-
+import MainController from './controllers/main-controller';
+app.controller('main-controller', MainController);

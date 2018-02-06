@@ -10,8 +10,10 @@ const ngCanvas = function () {
         controller: 'ngCanvasController',
         controllerAs: 'vm',
         bindToController: true, //required in 1.3+ with controllerAs        
-        link: function(scope, element, attrs) {
+        link: function(scope, element, attrs, ctrl) {
+            console.log('link inside ng-canvas')
 
+            console.log('ctr', ctrl);
         }
     };        
 };
